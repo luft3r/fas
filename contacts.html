@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — М'ясо Закарпаття</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="background">
+    <div class="banka" style="top:60%;left:80%;"></div>
+    <div class="banka" style="top:20%;left:5%;"></div>
+    <div class="sul" style="top:20%;left:80%;"></div>
+    <div class="sul" style="top:60%;left:5%;"></div>
+  </div>
+
+  <header class="hotbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип">
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Головна</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="contacts.html" class="active">Контакти</a>
+    </nav>
+    <div class="spacer"></div>
+  </header>
+
+  <main>
+    <section class="contact-section" style="font-family: 'Open Sans', sans-serif;">
+      <h1>📞 Контакти</h1>
+      <p style="font-size: 1.2em; margin-bottom: 2em;">
+        Маєш питання? Хочеш замовити щось смачненьке? Пиши або дзвони — Паша завжди на зв’язку!
+      </p>
+
+      <div class="contact-info" style="font-family: 'Open Sans', sans-serif;">
+        <div class="info-block">
+          <h2>🏢 М'ясо Закарпаття</h2>
+          <p><strong>👤 Власник:</strong> Павло (Паша)</p>
+          <p><strong>📍 Адреса:</strong> м. Ужгород, вул. М’ясна, 12</p>
+          <p><strong>📞 Телефон:</strong> <a href="tel:+380971234567">+38 (097) 123-45-67</a></p>
+          <p><strong>📧 Email:</strong> <a href="mailto:zakmeat.pasha@gmail.com">zakmeat.pasha@gmail.com</a></p>
+          <p><strong>🕒 Графік роботи:</strong> Пн–Сб: 9:00–18:00</p>
+        </div>
+
+        <div class="info-block" style="max-width: 600px; margin: 0 auto; padding: 30px; background-color: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; font-size: 1.8em; margin-bottom: 20px; display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <span style="font-size: 1.5em;">📬</span> Напиши нам
+  </h2>
+
+  <form class="contact-form">
+    <div style="display: flex; flex-direction: column; gap: 15px;">
+      
+      <div>
+        <label for="name" style="font-weight: 600; margin-bottom: 5px; display: block;">Ім’я:</label>
+        <input type="text" id="name" name="name" placeholder="Твоє ім’я"
+               style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1em;">
+      </div>
+
+      <div>
+        <label for="email" style="font-weight: 600; margin-bottom: 5px; display: block;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Твій email"
+               style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1em;">
+      </div>
+
+      <div>
+        <label for="message" style="font-weight: 600; margin-bottom: 5px; display: block;">Повідомлення:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Що хочеш замовити або запитати?"
+                  style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 1em;"></textarea>
+      </div>
+
+      <button type="submit"
+              style="background-color: #d62828; color: white; padding: 12px 20px; border: none; border-radius: 8px; font-size: 1em; cursor: pointer; display: flex; align-items: center; gap: 8px; justify-content: center;">
+        <span style="font-size: 1.2em;">📨</span> Надіслати Паші
+      </button>
+    </div>
+  </form>
+</div>
+
+
+      <div class="map">
+        <h2>🗺️ Ми на карті</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.123456789!2d22.3000000!3d48.6200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739b7e9e9e9e9e9%3A0x123456789abcdef!2z0JzQsNC90YHRgtCw0L3QsA!5e0!3m2!1suk!2sua!4v1690000000000"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="font-family: 'Open Sans', sans-serif;">
+      <p>&copy; 2023 М'ясо Закарпаття. Все права захищені. З любов’ю від Паші ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>

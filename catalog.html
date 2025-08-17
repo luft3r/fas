@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - М'ясо Закарпаття</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+<div class="background">
+    <div class="banka" style="top:60%;left:80%;"></div>
+    <div class="banka" style="top:20%;left:5%;"></div>
+    <div class="sul" style="top:20%;left:80%;"></div>
+    <div class="sul" style="top:60%;left:5%;"></div>
+</div>
+
+<header class="hotbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Логотип">
+    </div>
+    <nav class="navigation">
+        <a href="index.html">Головна</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="spacer"></div>
+</header>
+
+<main>
+    <section class="filter-section">
+        <div class="filter-container">
+
+            <!-- Категория продукта -->
+            <div class="custom-dropdown" id="categoryDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Категорія:</span>
+                    <span class="value">Всі</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Всі">Всі</li>
+                    <li data-value="М’ясні вироби">М’ясні вироби</li>
+                    <li data-value="Сало">Сало</li>
+                    <li data-value="Ковбаси">Ковбаси</li>
+                    <li data-value="Риба">Риба</li>
+                    <li data-value="Птиця">Птиця</li>
+                    <li data-value="Кролик">Кролик</li>
+                    <li data-value="Сир">Сир</li>
+                    <li data-value="Консервація">Консервація</li>
+                </ul>
+            </div>
+
+            <!-- Тип продукта -->
+            <div class="custom-dropdown" id="typeDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Тип продукту:</span>
+                    <span class="value">Всі</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Всі">Всі</li>
+                    <li data-value="Пікниця">Пікниця</li>
+                    <li data-value="Балик">Балик</li>
+                    <li data-value="Філе Закарпаття">Філе Закарпаття</li>
+                    <li data-value="Сардельки">Сардельки</li>
+                    <li data-value="Карп">Карп</li>
+                    <li data-value="Курка копчена">Курка копчена</li>
+                    <li data-value="Кролик">Кролик</li>
+                    <li data-value="Бринза">Бринза</li>
+                </ul>
+            </div>
+
+            <!-- Обробка -->
+            <div class="custom-dropdown" id="processingDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Обробка:</span>
+                    <span class="value">Всі</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Всі">Всі</li>
+                    <li data-value="Копчене">Копчене</li>
+                    <li data-value="Солене">Солене</li>
+                    <li data-value="У спеціях">У спеціях</li>
+                    <li data-value="Мелене">Мелене</li>
+                    <li data-value="Рублене">Рублене</li>
+                    <li data-value="Домашнє">Домашнє</li>
+                </ul>
+            </div>
+
+            <!-- Вага / Об’єм -->
+            <div class="custom-dropdown" id="weightDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Вага / Об’єм:</span>
+                    <span class="value">Всі</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Всі">Всі</li>
+                    <li data-value="1 кг">1 кг</li>
+                    <li data-value="0.5 кг">0.5 кг</li>
+                    <li data-value="0.5 л">0.5 л</li>
+                    <li data-value="1 шт">1 шт</li>
+                </ul>
+            </div>
+
+            <!-- Наявність -->
+            <div class="custom-dropdown" id="availabilityDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Наявність:</span>
+                    <span class="value">Всі</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Всі">Всі</li>
+                    <li data-value="В наявності">В наявності</li>
+                    <li data-value="Під замовлення">Під замовлення</li>
+                    <li data-value="Розпродано">Розпродано</li>
+                </ul>
+            </div>
+
+            <!-- Сортування -->
+            <div class="custom-dropdown" id="sortDropdown">
+                <button class="dropdown-toggle">
+                    <span class="label">Сортувати:</span>
+                    <span class="value">Ціна ↑</span>
+                    <span class="arrow">⚙️</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li data-value="Ціна ↑">Ціна ↑</li>
+                    <li data-value="Ціна ↓">Ціна ↓</li>
+                    <li data-value="Популярне">Популярне</li>
+                    <li data-value="Новинки">Новинки</li>
+                </ul>
+            </div>
+
+            <!-- Кнопка корзины -->
+            <button class="loot-button">🛒 Корзина</button>
+        </div>
+    </section>
+
+</main>
+<div class="cart-popup" id="cartPopup">
+<div class="cart-header">
+    <span>Моя корзина</span>
+    <button class="close-cart" id="closeCart">✖</button>
+</div>
+<div id="cart">
+  <h3>Ваша корзина</h3>
+  <ul id="cart-items"></ul>
+  <p id="empty-cart">Ваша корзина поки що порожня</p>
+</div>
+
+<div>
+<ul id="cart-items"></ul>
+<p id="cart-total">💰 Загальна сума: 0 грн</p>
+</div>
+
+<div class="cart-footer">
+    <button class="order-btn" onclick="location.href='checkout.html'">🧾 Оформити замовлення</button>
+</div>
+
+</div>
+
+<div class="product-grid">
+<div class="product-card">
+    <img src="images/kovbasa.jpg" alt="Балик Закарпатський" class="product-image">
+    <h3 class="product-title">Балик Закарпатський</h3>
+    <p class="product-price">465 грн / кг</p>
+    <button class="add-to-cart">➕ Додати в корзину</button>
+</div>
+
+<div class="product-card">
+    <img src="images/salo.jpg" alt="Сало копчене" class="product-image">
+    <h3 class="product-title">Сало копчене</h3>
+    <p class="product-price">350 грн /  кг</p>
+    <button class="add-to-cart">➕ Додати в корзину</button>
+</div>
+
+<div class="product-card">
+    <img src="images/kabanos.png" alt="Курка копчена" class="product-image">
+    <h3 class="product-title">Курка копчена</h3>
+    <p class="product-price">310 грн / шт</p>
+    <button class="add-to-cart">➕ Додати в корзину</button>
+</div>
+</div>
+<div id="notification"></div>
+
+<footer>
+          <div style="font-family: 'Open Sans', sans-serif;">
+            <p>&copy; 2023 М'ясо Закарпаття. Все права защищены.</p>
+          </div>
+        </footer>
+</body>
+</html>

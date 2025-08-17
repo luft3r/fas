@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформлення замовлення</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="background">
+    <div class="banka"style="top:60%;left:80%;"></div>
+    <div class="banka"style="top:20%;left:5%;"></div>
+    <div class="sul"style="top:20%;left:80%;"></div>
+    <div class="sul"style="top:60%;left:5%;"></div>
+</div>
+  <header class="hotbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип">
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Головна</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="spacer"></div>
+  </header>
+
+  <main class="checkout-main">
+    <h1>🧾 Оформлення замовлення</h1>
+    <h3>Ваше замовлення:</h3>
+<ul id="order-list"></ul>
+<p id="order-total">💰 Загальна сума: 0 грн</p>
+<input type="hidden" name="cartData" id="cart-data">
+
+    <form class="checkout-form">
+      <label for="name">Ім’я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="comment">Коментар до замовлення:</label>
+      <textarea id="comment" name="comment" rows="4"></textarea>
+
+      <button type="submit" class="confirm-button">✅ Підтвердити замовлення</button>
+    </form>
+  </main>
+<footer>
+          <div style="font-family: 'Open Sans', sans-serif;">
+            <p>&copy; 2023 М'ясо Закарпаття. Все права защищены.</p>
+          </div>
+        </footer>
+</body>
+</html>
