@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>М'ясо Закарпаття</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+<div class="background">
+    <div class="banka"style="top:60%;left:80%;"></div>
+    <div class="banka"style="top:20%;left:5%;"></div>
+    <div class="sul"style="top:20%;left:80%;"></div>
+    <div class="sul"style="top:60%;left:5%;"></div>
+</div>
+<header class="hotbar">
+    <div class="logo">
+    <img src="images/logo.png" alt="Логотип">
+    </div>
+    <nav class="navigation">
+    <a href="index.html">Головна</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="spacer"></div> <!-- Пустой блок для выравнивания -->
+</header>
+</div>
+<main class="content">
+  <section class="block white-outline welcome-section">
+    <h1 class="welcome">М’ясо Закарпаття</h1>
+    <p class="slogan">Свіже, копчене, справжнє. Як у діда — тільки з доставкою.</p>
+    <p class="description">Ми пропонуємо найкращі м'ясні продукти з Закарпаття. Від домашньої ковбаси до копченого шовдаря — все, що потрібно для вашого столу.</p>
+    <p class="description">Замовляйте онлайн та отримуйте доставку прямо до дверей. Ми гарантуємо якість та свіжість кожного продукту.</p>
+    <p class="description">Підписуйтесь на наші соціальні мережі, щоб бути в курсі новинок!</p>
+  </section>
+</div>
+<div style="text-align: center; margin: 200px 0;">
+  <a href="catalog.html" class="catalog-button">
+    В Каталог
+  </a>
+</div>
+  </section>
+</main>
+<section class="block white-outline reviews-section fade-in-on-scroll">
+    <h2 class="section-title text-hover-animate">📣 Відгуки клієнтів</h2>
+    <div class="reviews-container">
+      <div class="review-card slide-in">
+        <p class="review-name">🧑‍🦱 Олександр, Львів</p>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">«Замовляв копчену ковбасу — смак як у дитинстві! Доставка швидка, все свіже. Рекомендую!»</p>
+      </div>
+      <div class="review-card slide-in">
+        <p class="review-name">👩‍🦰 Марія, Ужгород</p>
+        <p class="review-stars">★★★★☆</p>
+        <p class="review-text">«Шовдар просто неймовірний. Трохи засолений, але для мене — саме те. Буду замовляти ще.»</p>
+      </div>
+      <div class="review-card slide-in">
+        <p class="review-name">🧔 Іван, Київ</p>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">«Нарешті знайшов справжнє закарпатське м’ясо онлайн. Якість на висоті, сервіс — супер!»</p>
+      </div>
+    </div>
+    <p class="review-footer">💬 Залишайте свій відгук після покупки — нам важлива ваша думка!</p>
+  </section>
+
+        <footer>
+          <div style="font-family: 'Open Sans', sans-serif;">
+            <p>&copy; 2023 М'ясо Закарпаття. Все права защищены.</p>
+          </div>
+        </footer>
+ <script>
+    const fadeEls = document.querySelectorAll('.fade-in-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+      </body>
+</html>
